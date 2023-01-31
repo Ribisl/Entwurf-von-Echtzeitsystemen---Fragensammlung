@@ -1,9 +1,0 @@
-\babel@toc {german}{}
-\babel@toc {ngerman}{}
-\contentsline {section}{\numberline {1}Prüfung 02.02.2022}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}1. Echtzeit}{2}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}a)}{2}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}b)}{2}{subsubsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.2}2. Echtzeitkommunikation}{2}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}a)}{2}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}b)}{2}{subsubsection.1.2.2}%
