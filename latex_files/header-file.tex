@@ -25,6 +25,8 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{parskip}
+\usepackage{titleps}
+\usepackage{lastpage}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \setlength{\parindent}{0pt}		% Einrückungen nach Absatz vermeiden
 
@@ -51,3 +53,12 @@
 	%caption={Java-Code}, 			% Caption
 	tabsize=2				% Größe der Tabulatoren
 }
+
+% section title in header
+\newpagestyle{main}{
+\setheadrule{.4pt}% Header rule
+\sethead{Entwurf von Echtzeitsystemen}% left
+        {\thepage / \pageref{LastPage}}%                 center
+        {\sectiontitle}%    right
+}
+\pagestyle{main}
