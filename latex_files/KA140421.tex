@@ -1,6 +1,6 @@
 \section{Prüfung 14.04.2021}
 \subsection{Echtzeit}
-\subsubseciton{a)}
+\subsubsection{a)}
 Ein Zugführer muss in den ersten 30 Sekunden jeder Minute den Totmannknopf drücken um
 anzuzeigen dass er noch am Leben ist. Unterbleibt das rechtzeitige Drücken des Totmannknopfes,
 macht der Zug automatisch eine Notbremsung.
@@ -66,6 +66,11 @@ T3 = (4; 12)
 wobei ein Task als "Tn = (Ausführungszeit; Periode)" definiert ist. Für jeden Task ist die Periode identisch
 mit der Deadline. Das Scheduling aller Tasks beginnt gleichzeitig zum Zeitpunkt 0.
 
+\begin{figure}[H]
+  \includegraphics[width=10cm]{images/KA140421/3a.PNG}
+  \centering
+\end{figure}
+
 \subsubsection{a)}
 Werden in der Abbildung alle Deadlines eingehalten? Falls nicht, geben Sie die erste Verletzung
 einer Deadline an.
@@ -74,9 +79,11 @@ Ja es werden alle Deadlines eingehalten.
 
 \subsubsection{b)}
 Wurde dieses abgebildete Schedule mit EDF erzeugt? Begründen Sie.
+Nein, der Schedule wurde mit Round Robin erzeugt.
 
 \subsubsection{c)}
 Wurde dieses abgebildete Schedule mit RMS erzeugt? Begründen Sie.
+Nein, der Schedule wurde mit Round Robin erzeugt.
 
 \subsection{Tasksynchronisation}
 Gegeben seien wie unten gezeigt zwei periodische Tasks T1 und T2, die auf die gemeinsame Variable X
@@ -125,8 +132,8 @@ Geben Sie für jede Variable eine Folge von Zeitintervallen an wann diese Variab
 jede Variable kann es mehrere solche Intervalle geben. Zum Beispiel bedeutet [3, 4] dass eine Variable von
 3 Sekunden nach Beginn der Ausführung bis 4 Sekunden nach Beginn der Ausführung den Wert TRUE hat.
 
-A: [0 ,5 ] [15,15] [/,/ ]
-B: [0 ,10] [/ ,/ ] [20,-]
+A: [0 ,5 ] [15,15] [/,/ ]\\
+B: [0 ,10] [/ ,/ ] [20,-]\\
 C: [10,10] [10,15] [/,/ ]
 
 \begin{figure}[H]
