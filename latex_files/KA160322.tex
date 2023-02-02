@@ -76,8 +76,12 @@ $U_g(3) = 0.7798$
 \end{equation}
 Da $0.9833$ nicht kleiner gleich wie $0.7798$ ist, können die Deadlines nicht bis in alle Ewigkeiten eingehalten werden.\\
 
-RMS $U > 1$ nicht schedulebar, bei $U <= 1$ eventuell, $U \ U(n) <= 1$ fix\\
-EDF $U > 1$ nicht schedulebar, bei $U <= 1$ fix
+\begin{itemize}
+  \item RMS $U > 1$ nicht schedulebar, bei $U \leq 1$ eventuell, $U(n) \leq 0.7798$ fix
+  \item EDF $U > 1$ nicht schedulebar, bei $U \leq 1$ fix
+\end{itemize}
+
+
 
 \subsection{Taskprioritäten}
 \subsubsection{a)}
@@ -90,7 +94,7 @@ Welche Voraussetzungen müssen erfüllt sein damit eine Prioritätsinvertierung 
 Begründen Sie Ihre Antwort!
 
 Ein Task mit niedriger Priorität muss eine Resource locken welche später von einem hoch prioren Task gebraucht wird. 
-Da der niedrig priore Task die Resource nicht freigegeben hat kann der hoch priore Task nicht zugreifen und muss warten.
+Da der niedrig priore Task die Resource nicht freigegeben hat, kann der hoch priore Task nicht zugreifen und muss warten.
 
 \subsubsection{c)}
 Was ist der Unterschied zwischen einer unbeschränkten Prioritätsinvertierung und einer beschränkten
@@ -102,8 +106,8 @@ wird der verdrängte Task nur für eine bestimmte Zeit nicht gescheduled.
 \subsubsection{d)}
 Erläutern Sie ein Verfahren um die unbeschränkte Prioritätsinvertierung zu vermeiden!
 
-Ressource bekommt ebenfalls eine Priorität, die höher als die der höchstprioren sie nutzenden Task ist.
-Nutzt eine Task die Ressource, nimmt sie temporär diese höhere Priorität an. Oder Priority Aging.
+Ressource bekommt ebenfalls eine Priorität, die höher als die der höchstprioren Task ist.
+Nutzt ein Task die Ressource, nimmt sie temporär diese höhere Priorität an. Oder Priority Aging, Priority Inheritance
 
 \subsection{Statecharts}
 Der folgende Programmcode wurde aus einem Statechart generiert. Zeichnen Sie den ursprünglichen
@@ -173,7 +177,7 @@ gleiche Funktion ausführen wie der Strukturierte Text:
 \end{figure}
 
 \begin{figure}[H]
-  \includegraphics[width=10cm]{images/KA160322/6a.png}
+  \includegraphics[width=10cm]{images/KA160322/6a_2.png}
   \centering
   \caption{Kontaktplan}
 \end{figure}

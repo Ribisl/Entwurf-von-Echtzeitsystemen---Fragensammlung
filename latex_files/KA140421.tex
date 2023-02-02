@@ -23,8 +23,8 @@ Standby-Kontrollsystem.
 
 Vorteile:
 \begin{itemize}
-  \item hohe Sicherheit
-  \item hohe Robustheit
+  \item Hohe Sicherheit
+  \item Hohe Robustheit
   \item bessere Fehlererkennung
 \end{itemize}
 
@@ -59,10 +59,10 @@ eingebetteter Echtzeitsysteme bietet.
 
 \subsection{Echtzeitscheduling}
 Die Abbildung zeigt den Schedule für die Ausführung der folgenden präemptiven Tasks T1, T2, T3 auf einem
-Prozessor.
-T1 = (1; 3),
-T2 = (2; 6),
-T3 = (4; 12)
+Prozessor.\\
+T1 = (1; 3),\\
+T2 = (2; 6),\\
+T3 = (4; 12)\\
 wobei ein Task als "Tn = (Ausführungszeit; Periode)" definiert ist. Für jeden Task ist die Periode identisch
 mit der Deadline. Das Scheduling aller Tasks beginnt gleichzeitig zum Zeitpunkt 0.
 
@@ -79,10 +79,12 @@ Ja es werden alle Deadlines eingehalten.
 
 \subsubsection{b)}
 Wurde dieses abgebildete Schedule mit EDF erzeugt? Begründen Sie.
+
 Nein, der Schedule wurde mit Round Robin erzeugt.
 
 \subsubsection{c)}
 Wurde dieses abgebildete Schedule mit RMS erzeugt? Begründen Sie.
+
 Nein, der Schedule wurde mit Round Robin erzeugt.
 
 \subsection{Tasksynchronisation}
@@ -100,7 +102,7 @@ ausgeführt.
 \subsubsection{a)}
 Welche Ausgabefolge wird generiert falls T1 eine höhere Priorität als T2 hat?
 
-3,4,3,2,1,0,1,2,3,4,3,2,1,\dots
+3, 4, 3, 2, 1, 0, 1, 2, 3, 4, 3, 2, 1,\dots
 
 \subsubsection{b)}
 Die Zeile $X = X + 1$ besteht aus einer Lese und einer darauf folgenden Schreiboperation.
