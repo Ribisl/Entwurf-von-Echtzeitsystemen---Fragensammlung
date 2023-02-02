@@ -65,8 +65,10 @@ sollen T1 und T2 die Funktionen Calc2() und Calc3() (quasi) gleichzeitig ausfüh
 S1 muss mit 0 intialisiert werden!
 
 \subsection{Echtzeitscheduling}
-Die Abbildung zeigt das Schedule für die Ausführung der folgenden Tasks T1, T2, T3 auf einem Prozessor.
-T1 = (X; 4), T2 = (1; 5), T3 = (3; 10)
+Die Abbildung zeigt das Schedule für die Ausführung der folgenden Tasks T1, T2, T3 auf einem Prozessor.\\
+T1 = (X; 4),\\
+T2 = (1; 5),\\
+T3 = (3; 10)\\
 wobei ein Task als Tn = (Ausführungszeit; Periode) definiert ist. Für jeden Task ist die Periode identisch mit
 der Deadline. Die Ausführung aller Tasks beginnt gleichzeitig zum Zeitpunkt 0.
 \begin{figure}[H]
@@ -80,7 +82,13 @@ Wie groß ist die Worst-Case Execution Time X von Task T1? Begründen Sie!
 $X=2$, da bei T1 innerhalb von einer Periode (=4 Zeitschritten) die Ausführungszeit immer 2 ist.
 
 \subsubsection{b)}
-keine Ahnung.
+Welcher Algorithmus hat das abgebildete Schedule erzeugt? Begründen Sie!
+i. Rate Monotonic Schedule (RMS)\\
+ii. Earliest Deadline First (EDF)\\
+iii. Keiner der genannten\\
+
+Keiner der genannten. Bei RMS müsste T1 immer am Anfang gezeichnet werden. Bei EDF müsste bei Schritt 16 Task 1 auch am 
+Anfang gezeichnet werden, da alle die gleiche Deadline haben und T1 die höchste Priorität hat.
 
 \subsection{Statecharts}
 Der folgende Programmcode wurde aus einem Statechart generiert. Zeichnen Sie den ursprünglichen
